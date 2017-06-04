@@ -35,7 +35,7 @@
 .whitet{
   color: #ffffff;
 }
-/*Contenido*/
+/*Fuentes*/
 .icono{
   font-family: FontAwesome, Arial;
   font-style: normal;
@@ -43,7 +43,11 @@
 .patua{
   font-family: Patua One;
 }
-
+/*Transparencia de color*/
+.seda{
+  background-color: rgba(215,221,230,0.30)
+}
+/*Contenido*/
 body{
   background-image: url("../img/food.jpg");
   background-repeat: no-repeat;
@@ -60,10 +64,6 @@ body{
   background: -moz-linear-gradient(left, rgba(255,0,0,0), rgba(215,221,230,1)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, rgba(255,0,0,0), rgba(215,221,230,1)); /* Standard syntax (must be last) */
 }
-.seda{
-  background-color: rgba(215,221,230,0.30)
-}
-
 h1{
   font-size: 3em;
   text-align: right;
@@ -80,12 +80,11 @@ hr{
   height: 1px;
   border: 0;
 }
-/*Dropdown*/
+/*Propiedades Dropdown*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: relative;
@@ -95,35 +94,36 @@ hr{
     padding: 12px -10px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/*Img Grid*/
-.img-fluid{
-  width: 100%;
-  padding: 0 auto;
-}
+/*Posicionamiento*/
 .historial{
   height: 50px;
 }
 .scroll{
   overflow-y: scroll;
+  img[src^="img/p"]{
+    padding: 3px 0;
+    border-radius: 50%;
+  }
+  img[src^="img/c"]{
+    padding: 0 auto;
+    width: 25%;
+  }
 }
+/*Fuentes y texto*/
 label[class^="patua"]{
   font-size: 1.5em;
-}
-img[src^="img/p"]{
-  padding: 3px 0;
-  border-radius: 50%;
-}
-img[src^="img/c"]{
-  padding: 0 auto;
-  width: 25%;
 }
 .texto{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+}
+/*Responsiveness*/
+.img-fluid{
+  width: 100%;
+  padding: 0 auto;
 }
 @media (max-width: 800px){
   .navegacion{

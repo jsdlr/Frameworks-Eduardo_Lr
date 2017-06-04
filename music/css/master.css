@@ -1,3 +1,8 @@
+body{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 header{
   min-height: 200px;
   width: 100;
@@ -6,17 +11,14 @@ header{
   background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
 }
-body{
-  width: 100%;
-  padding: 0;
-  margin: 0;
+/*Transparencia*/
+.trans90{
+  opacity: 0.95;
 }
+/*Posiciones y propiedades*/
 .img-fluid{
   max-width: 100%;
   height: auto;
-}
-.trans90{
-  opacity: 0.95;
 }
 .alto{
   height: 200px;
@@ -26,7 +28,7 @@ body{
   position: absolute;
   bottom: 5%;
 }
-/*NavBar*/
+/*Propiedades NavBar*/
 .affix {
   top: 0;
   width: 100%;
@@ -42,6 +44,7 @@ p{
   font-family: FontAwesome, Arial;
   font-style: normal;
 }
+/*Responsiveness*/
 @media (max-width: 800px) {
   .alto{
     height: 35px;
