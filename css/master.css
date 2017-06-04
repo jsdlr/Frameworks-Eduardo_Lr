@@ -1,7 +1,30 @@
 body{
-  background-image: url("img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  opacity: 0.9;
+  background-color: white;
+  background-image: url(../img/cover.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+h1{
+  max-width: 100%;
+  text-shadow: 0px 0px 500px white;
+  font-size: 150px;
+  color: #131B23;
+}
+div{
+  max-width: 100%;
+  margin: 0 auto;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 0 5%;
+}
+i{
+  color: white;
+}
+a:hover{
+  color: lightgrey;
 }
